@@ -45,4 +45,7 @@ Custom msg structure can see in /msg/Custom.msg the messages consist of
 4. Quaternion: float array size 1*4n [qx1,qy1,qz1,qw1,qx2,qx3,qx4]
 while n is number of markers found.
 
-Custom message publish in to topic "/HouseM8/Aruco"
+Custom message publish in to topic "/HouseM8/Aruco" that you can see by echo this topic
+```
+ros2 topic echo /HouseM8/Aruco
+```
