@@ -5,11 +5,12 @@ to your texture.png path
     
 going to your workspace
 ```
+cd ~/[yourworkspace]
 colcon build
 ```
 Then sorce your workspace
 ```
-~/yourworkspace/install/setup.bash
+~/[yourworkspace]/install/setup.bash
 ```
 then launch gazebo and rviz by use this command
 ```
