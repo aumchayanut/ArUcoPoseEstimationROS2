@@ -32,7 +32,12 @@ You will have camera frame window like this
  You will have marker info from terminal that consists of Id, TranslationVector(XYZ), EulerAngle(RPY), RotationMatrix and Quaternion of objects in camera frame.
  These store in Dictionary name "Marker" variable
  Camera frame are X right Y Down Z Out of the camera
-
+    
+ You can use teleop keyboard to move the robot by open new terminal and run
+ ```
+ ros2 run teleop_twist_keyboard teleop_twist_keyboard
+```
+    
 Custom msg structure can see in /msg/Custom.msg the messages consist of
 1. ID: uint16 array size 1*n [1,2]
 2. Translation Vector: float array size 1*3n [x1,y1,z1,x2,y2,z2]
