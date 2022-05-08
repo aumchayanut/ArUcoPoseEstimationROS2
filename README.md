@@ -24,6 +24,7 @@ like this
     
 Then source workspace in another terminal and run pose estimation node by run sub_cam.py
 ```
+~/[yourworkspace]/install/setup.bash
 ros2 run aruco sub_cam.py
 ```
 You will have camera frame window like this
