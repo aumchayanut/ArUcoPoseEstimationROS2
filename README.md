@@ -30,3 +30,12 @@ You will have camera frame window like this
  You will have marker info from terminal that consists of Id, TranslationVector(XYZ), EulerAngle(RPY), RotationMatrix and Quaternion of objects in camera frame.
  These store in Dictionary name "Marker" variable
  Camera frame are X right Y Down Z Out of the camera
+
+Custom msg structure can see in /msg/Custom.msg the messages consist of
+1. ID: uint16 array size 1*n [1,2]
+2. Translation Vector: float array size 1*3n [x1,y1,z1,x2,y2,z2]
+3. Euler Angle: float array size 1*3n [r1,p1,y1,r2,p2,y2]
+4. Quaternion: float array size 1*4n [qx1,qy1,qz1,qw1,qx2,qx3,qx4]
+while n is number of markers found.
+
+Custom message publish in to topic "/HouseM8/Aruco"
