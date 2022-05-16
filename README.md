@@ -18,15 +18,15 @@ You will have
 like this
 ![ArUcoPoseEstimationROS2](GazeboExample.png)
     
-Then source workspace in another terminal and run pose estimation node by run sub_cam.py
+Next we will visualizing camera node by open another terminal source your workspace and run pose estimation node by run sub_cam.py
 ```
 ~/[yourworkspace]/install/setup.bash
 ros2 run aruco sub_cam.py
 ```
-You will have camera frame window like this
+You will have camera frame window like this and output in terminal "Publishing..."
 ![ArUcoPoseEstimationROS2](OpenCameraExample.png)
- You will have marker info from terminal that consists of Id, TranslationVector(XYZ), EulerAngle(RPY), RotationMatrix and Quaternion of objects in camera frame.
- These store in Dictionary name "Marker" variable
+ This node is publishing marker info that consists of Id, TranslationVector(XYZ), EulerAngle(RPY), RotationMatrix and Quaternion of objects in camera frame.
+ These store in Dictionary name "Marker"
  Camera frame are X right Y Down Z Out of the camera
     
  You can use teleop keyboard to move the robot by open new terminal and run
@@ -45,7 +45,7 @@ Custom message publish in to topic "/HouseM8/Aruco" that you can see by echo thi
 ```
 ros2 topic echo /HouseM8/Aruco
 ```
-Next we have an example node to get message from /HouseM8/Aruco topic in /scripts/sub_aruco    
+Next we have an example node to subscibing message from /HouseM8/Aruco topic by sub_aruco.py    
 You have to run this node after sub_cam.py success.    
 ```
 ~/[yourworkspace]/install/setup.bash
