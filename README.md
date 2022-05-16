@@ -1,5 +1,5 @@
 # ArUcoPoseEstimationROS2
-going to your workspace
+going to your workspace and build your workspace
 ```
 cd ~/[yourworkspace]
 colcon build
