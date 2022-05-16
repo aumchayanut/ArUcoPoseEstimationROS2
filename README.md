@@ -1,8 +1,4 @@
 # ArUcoPoseEstimationROS2
-First change models/box(cylinder)/meshes/model.mtl    
-/home/aum/aruco_ws/src/aruco/models/box/materials/textures/texture.png    
-to your texture.png path    
-    
 going to your workspace
 ```
 cd ~/[yourworkspace]
