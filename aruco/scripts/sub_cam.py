@@ -99,14 +99,15 @@ class CameraSubsciber(Node):
 
             self.pub.publish(msg)
 
-
-            self.get_logger().info(
-                'Publishing: \nID:'+ str(msg.id.data) +
-                "\nTranslation Vector: " +str(msg.tvec.data) + 
-                "\nEuler Angle: " + str(msg.eul.data) + 
-                "\nQuaternion: " + str(msg.qua.data)
-                )
+            self.get_logger().info("Publishing...")
+            # self.get_logger().info(
+            #     'Publishing: \nID:'+ str(msg.id.data) +
+            #     "\nTranslation Vector: " +str(msg.tvec.data) + 
+            #     "\nEuler Angle: " + str(msg.eul.data) + 
+            #     "\nQuaternion: " + str(msg.qua.data)
+            #     )
         except:
+            self.get_logger().info("Error...")
             pass
 
 def main():

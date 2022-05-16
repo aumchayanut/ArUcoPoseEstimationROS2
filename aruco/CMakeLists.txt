@@ -47,7 +47,7 @@ install(DIRECTORY
 install(PROGRAMS
   scripts/sub_cam.py
   scripts/utils.py
-  scripts/listener.py
+  scripts/sub_aruco.py
   DESTINATION lib/${PROJECT_NAME}
   )
 
