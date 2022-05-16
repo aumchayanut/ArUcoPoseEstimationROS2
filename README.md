@@ -8,7 +8,7 @@ Then sorce your workspace
 ```
 ~/[yourworkspace]/install/setup.bash
 ```
-then launch gazebo and rviz by use this command
+then launch gazebo and rviz by use this launch file
 ```
 ros2 launch aruco launch.py
 ```
