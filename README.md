@@ -45,3 +45,14 @@ Custom message publish in to topic "/HouseM8/Aruco" that you can see by echo thi
 ```
 ros2 topic echo /HouseM8/Aruco
 ```
+Next we have an example node to get message from /HouseM8/Aruco topic in /scripts/sub_aruco    
+You have to run this node after sub_cam.py success.    
+```
+~/[yourworkspace]/install/setup.bash
+ros2 run aruco sub_aruco.py
+```
+In python code, you will have variable that collected all of the messages in list this
+1. Id: [1,2,...]
+2. Translation Vector: [[x1,y1,z1],[x2,y2,z2],...]
+3. Euler Angle: [[r1,p1,y1],[r2,p2,y2],...]
+4. Quaternion: [[qx1,qy1,qz1,qw1],[qx2,qy2,qz2,qw2],...]
