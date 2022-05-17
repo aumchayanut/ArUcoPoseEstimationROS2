@@ -49,8 +49,15 @@ class ArucoSubscriber(Node):
                 qz = self.qua[(4*(i-1))+2]
                 qw = self.qua[(4*(i-1))+3]
                 self.quaternion.append([qx,qy,qz,qw])
-            self.get_logger().info("Found "+str(len(self.id))+" Marker(s)")
-
+        self.get_logger().info("Found "+str(len(self.id))+" Marker(s)")
+        print("*************************************************\nID = ")    
+        print(self.id)
+        print("*************************************************\nTranslation Vector = ")    
+        print(self.translationVector)
+        print("*************************************************\nEuler Angle = ")  
+        print(self.eulerAngle)
+        print("*************************************************\nQuaternion = ")  
+        print(self.quaternion)
 def main(args=None):
     rclpy.init(args=args)
     minimal_subscriber = ArucoSubscriber()

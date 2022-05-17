@@ -12,7 +12,7 @@ def generate_launch_description():
   # using package path to find urdf file
   urdf = os.path.join(package_dir,'urdf','Rehri_gazebo_rviz.urdf')
   # using package path to find the Custom World file
-  world_file = os.path.join(package_dir,'models','worlds','world.world')
+  world_file = os.path.join(package_dir,'models','worlds','example.world')
   # Adding path to gazebo_ros package
   pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
   # Important rviz file to make life easy 

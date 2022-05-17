@@ -25,7 +25,7 @@ cam_dist = [0.0,0.0,0.0,0.0,0.0]
 CameraTopic = '/camera1/image_raw'
 ArucoTopic = '/HouseM8/Aruco'
 
-marker_length = 0.05 #5cm
+marker_length = 0.1 #10cm
 
 
 x = np.array(cam_matrix,dtype=np.float32)
