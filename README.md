@@ -7,7 +7,7 @@ git clone https://github.com/aumchayanut/ArUcoPoseEstimationROS2
 move folder aruco_marker_(shape) to GAZEBO_MODEL_PATH or include gazebo model path to let them know the aruco model for gazebo    
 To move to default path
 ```
-mv aruco_marker_box aruco_marker_cylinder ~/.gazebo/models/
+mv aruco_marker_box aruco_marker_cylinder /usr/share/gazebo-11/models/
 ```
 Or include your own path
 ```
